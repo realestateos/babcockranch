@@ -127,7 +127,7 @@ export default function ContactForm({
               required
               value={formState.name}
               onChange={handleChange}
-              className="w-full px-4 py-2.5 border border-stone-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none transition-all"
+              className="w-full px-4 py-2.5 border border-stone-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none transition-all text-stone-800 bg-white"
               placeholder="John Smith"
             />
           </div>
@@ -143,7 +143,7 @@ export default function ContactForm({
               required
               value={formState.email}
               onChange={handleChange}
-              className="w-full px-4 py-2.5 border border-stone-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none transition-all"
+              className="w-full px-4 py-2.5 border border-stone-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none transition-all text-stone-800 bg-white"
               placeholder="john@example.com"
             />
           </div>
@@ -160,7 +160,7 @@ export default function ContactForm({
               name="phone"
               value={formState.phone}
               onChange={handleChange}
-              className="w-full px-4 py-2.5 border border-stone-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none transition-all"
+              className="w-full px-4 py-2.5 border border-stone-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none transition-all text-stone-800 bg-white"
               placeholder="(239) 555-0123"
             />
           </div>
@@ -176,7 +176,8 @@ export default function ContactForm({
                 required
                 value={formState.serviceType}
                 onChange={handleChange}
-                className="w-full px-4 py-2.5 border border-stone-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none transition-all bg-white text-stone-800"
+                className="w-full px-4 py-2.5 border border-stone-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none transition-all bg-white text-stone-800 appearance-none"
+                style={{ color: '#1c1917' }}
               >
                 <option value="" className="text-stone-800">Select a service</option>
                 <option value="landscaping" className="text-stone-800">Landscaping & Lawn Care</option>
@@ -209,7 +210,7 @@ export default function ContactForm({
             rows={4}
             value={formState.message}
             onChange={handleChange}
-            className="w-full px-4 py-2.5 border border-stone-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none transition-all resize-none"
+            className="w-full px-4 py-2.5 border border-stone-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none transition-all resize-none text-stone-800 bg-white"
             placeholder="Tell us about your project or question..."
           />
         </div>

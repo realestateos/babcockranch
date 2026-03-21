@@ -93,7 +93,7 @@ export default function EmailSignupForm({
               name="name"
               value={formState.name}
               onChange={handleChange}
-              className="w-full px-4 py-2.5 border border-stone-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none transition-all"
+              className="w-full px-4 py-2.5 border border-stone-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none transition-all text-stone-800 bg-white"
               placeholder="John"
             />
           </div>
@@ -110,7 +110,7 @@ export default function EmailSignupForm({
             required
             value={formState.email}
             onChange={handleChange}
-            className="w-full px-4 py-2.5 border border-stone-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none transition-all"
+            className="w-full px-4 py-2.5 border border-stone-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none transition-all text-stone-800 bg-white"
             placeholder="john@example.com"
           />
         </div>
