@@ -78,9 +78,41 @@ export default function ContactForm({
   }
 
   return (
-    <div className="bg-white rounded-xl border border-stone-200 p-6 md:p-8">
-      <h3 className="text-xl font-semibold text-stone-800 mb-2">{title}</h3>
-      <p className="text-stone-600 mb-6">{description}</p>
+    <div className="bg-white rounded-xl border-2 border-emerald-200 p-6 md:p-8 shadow-lg">
+      {/* Trust Badges */}
+      <div className="flex items-center gap-4 mb-4 text-sm text-stone-600">
+        <div className="flex items-center gap-1">
+          <svg className="w-4 h-4 text-emerald-600" fill="currentColor" viewBox="0 0 20 20">
+            <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+          </svg>
+          <span>Free Quotes</span>
+        </div>
+        <div className="flex items-center gap-1">
+          <svg className="w-4 h-4 text-emerald-600" fill="currentColor" viewBox="0 0 20 20">
+            <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+          </svg>
+          <span>Vetted Pros</span>
+        </div>
+        <div className="flex items-center gap-1">
+          <svg className="w-4 h-4 text-emerald-600" fill="currentColor" viewBox="0 0 20 20">
+            <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+          </svg>
+          <span>Local Experts</span>
+        </div>
+      </div>
+      
+      <h3 className="text-2xl font-bold text-stone-800 mb-2">{title}</h3>
+      <p className="text-stone-600 mb-4">{description}</p>
+      
+      {/* Urgency Element */}
+      <div className="bg-amber-50 border border-amber-200 rounded-lg p-3 mb-6">
+        <p className="text-amber-800 text-sm flex items-center gap-2">
+          <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+          <span>Get matched within 24 hours — spots limited for new Babcock Ranch residents</span>
+        </p>
+      </div>
       
       <form onSubmit={handleSubmit} className="space-y-5">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
@@ -144,17 +176,23 @@ export default function ContactForm({
                 required
                 value={formState.serviceType}
                 onChange={handleChange}
-                className="w-full px-4 py-2.5 border border-stone-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none transition-all bg-white"
+                className="w-full px-4 py-2.5 border border-stone-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none transition-all bg-white text-stone-800"
               >
-                <option value="">Select a service</option>
-                <option value="landscaping">Landscaping & Lawn Care</option>
-                <option value="pool">Pool Services</option>
-                <option value="hvac">HVAC & Air Conditioning</option>
-                <option value="pest">Pest Control</option>
-                <option value="cleaning">Home Cleaning</option>
-                <option value="handyman">Handyman Services</option>
-                <option value="security">Home Security</option>
-                <option value="other">Other</option>
+                <option value="" className="text-stone-800">Select a service</option>
+                <option value="landscaping" className="text-stone-800">Landscaping & Lawn Care</option>
+                <option value="pool" className="text-stone-800">Pool Services</option>
+                <option value="hvac" className="text-stone-800">HVAC & Air Conditioning</option>
+                <option value="pest" className="text-stone-800">Pest Control</option>
+                <option value="cleaning" className="text-stone-800">Home Cleaning</option>
+                <option value="handyman" className="text-stone-800">Handyman Services</option>
+                <option value="security" className="text-stone-800">Home Security</option>
+                <option value="plumbing" className="text-stone-800">Plumbing</option>
+                <option value="electrical" className="text-stone-800">Electrical</option>
+                <option value="flooring" className="text-stone-800">Flooring</option>
+                <option value="painting" className="text-stone-800">Painting</option>
+                <option value="window-treatments" className="text-stone-800">Window Treatments</option>
+                <option value="real-estate" className="text-stone-800">Real Estate Agent</option>
+                <option value="other" className="text-stone-800">Other</option>
               </select>
             </div>
           )}

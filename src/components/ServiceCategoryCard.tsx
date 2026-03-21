@@ -27,15 +27,9 @@ export default function ServiceCategoryCard({ title, description, href, icon, ve
         </p>
         
         <div className="flex items-center justify-between">
-          {vendorCount !== undefined ? (
-            <span className="text-xs text-stone-500">
-              {vendorCount} vendors
-            </span>
-          ) : (
-            <span className="text-xs text-amber-600 font-medium bg-amber-50 px-2 py-1 rounded-full">
-              Coming soon
-            </span>
-          )}
+          <span className="text-xs text-emerald-700 font-medium group-hover:underline">
+            Learn more
+          </span>
           
           <svg className="w-5 h-5 text-stone-400 group-hover:text-emerald-600 group-hover:translate-x-1 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
