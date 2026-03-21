@@ -16,11 +16,20 @@ export const metadata: Metadata = {
     siteName: "Babcock Ranch Homeowner Guide",
     title: "Babcock Ranch Homeowner Guide | Home Services, Tips & Local Resources",
     description: "Explore the Babcock Ranch Homeowner Guide for home service categories, homeowner tips, local resources, and practical advice for setting up, upgrading, and maintaining your home.",
+    images: [
+      {
+        url: "https://babcockranchhomeownerguide.com/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Babcock Ranch Homeowner Guide - Home Services, Local Tips & Trusted Resources",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Babcock Ranch Homeowner Guide | Home Services, Tips & Local Resources",
     description: "Explore the Babcock Ranch Homeowner Guide for home service categories, homeowner tips, local resources, and practical advice for setting up, upgrading, and maintaining your home.",
+    images: ["https://babcockranchhomeownerguide.com/og-image.png"],
   },
   alternates: {
     canonical: "https://babcockranchhomeownerguide.com",

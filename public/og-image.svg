@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <!-- Background -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d9488"/>
+      <stop offset="100%" style="stop-color:#065f46"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  <!-- Main background -->
+  <rect width="1200" height="630" fill="url(#bgGradient)"/>
+  
+  <!-- Decorative elements -->
+  <circle cx="100" cy="100" r="200" fill="#14b8a6" opacity="0.1"/>
+  <circle cx="1100" cy="530" r="250" fill="#0f766e" opacity="0.2"/>
+  
+  <!-- House icon -->
+  <g transform="translate(550, 120)" filter="url(#shadow)">
+    <path d="M50 20 L100 60 L100 120 L0 120 L0 60 Z" fill="white" opacity="0.95"/>
+    <rect x="35" y="75" width="30" height="45" fill="#0d9488"/>
+    <rect x="10" y="75" width="20" height="20" fill="#0d9488"/>
+    <rect x="70" y="75" width="20" height="20" fill="#0d9488"/>
+  </g>
+  
+  <!-- Title -->
+  <text x="600" y="320" font-family="system-ui, -apple-system, sans-serif" font-size="56" font-weight="700" fill="white" text-anchor="middle">
+    Babcock Ranch
+  </text>
+  <text x="600" y="390" font-family="system-ui, -apple-system, sans-serif" font-size="48" font-weight="600" fill="#f0fdfa" text-anchor="middle">
+    Homeowner Guide
+  </text>
+  
+  <!-- Subtitle -->
+  <text x="600" y="470" font-family="system-ui, -apple-system, sans-serif" font-size="24" font-weight="400" fill="#ccfbf1" text-anchor="middle">
+    Home Services • Local Tips • Trusted Resources
+  </text>
+  
+  <!-- Location badge -->
+  <rect x="480" y="510" width="240" height="40" rx="20" fill="white" opacity="0.15"/>
+  <text x="600" y="537" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="500" fill="#99f6e4" text-anchor="middle">
+    Babcock Ranch, Florida
+  </text>
+</svg>
