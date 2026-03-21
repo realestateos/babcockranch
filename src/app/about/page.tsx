@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "About Us | Babcock Ranch Homeowner Guide",
@@ -17,8 +18,19 @@ export default function AboutPage() {
   return (
     <div>
       {/* Hero */}
-      <section className="bg-gradient-to-br from-emerald-800 to-stone-900 text-white py-16 md:py-24">
-        <div className="max-w-7xl mx-auto container-padding">
+      <section className="relative bg-gradient-to-br from-emerald-800 to-stone-900 text-white py-16 md:py-24 overflow-hidden">
+        {/* Background Image */}
+        <div className="absolute inset-0 opacity-20">
+          <Image 
+            src="/images/home-exterior.jpg" 
+            alt="Babcock Ranch home"
+            fill
+            className="object-cover"
+          />
+        </div>
+        <div className="absolute inset-0 bg-gradient-to-r from-emerald-900/90 to-emerald-800/70" />
+        
+        <div className="relative max-w-7xl mx-auto container-padding">
           <div className="max-w-3xl">
             <span className="text-emerald-300 font-medium text-sm uppercase tracking-wider">About Us</span>
             <h1 className="text-4xl md:text-5xl font-bold mt-3 mb-6">

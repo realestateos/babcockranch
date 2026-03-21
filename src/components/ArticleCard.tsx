@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 interface ArticleCardProps {
   title: string;
@@ -6,17 +7,27 @@ interface ArticleCardProps {
   slug: string;
   category: string;
   readTime?: string;
+  image?: string;
 }
 
-export default function ArticleCard({ title, excerpt, slug, category, readTime = "5 min read" }: ArticleCardProps) {
+export default function ArticleCard({ title, excerpt, slug, category, readTime = "5 min read", image }: ArticleCardProps) {
   return (
     <Link href={`/articles/${slug}`} className="group block">
       <article className="bg-white rounded-xl border border-stone-200 overflow-hidden hover:shadow-lg transition-shadow duration-300 h-full flex flex-col">
-        {/* Placeholder Image */}
-        <div className="aspect-video bg-gradient-to-br from-emerald-100 to-stone-200 flex items-center justify-center">
-          <svg className="w-12 h-12 text-emerald-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9.5a2.5 2.5 0 00-2.5-2.5H14" />
-          </svg>
+        {/* Article Image */}
+        <div className="aspect-video bg-gradient-to-br from-emerald-100 to-stone-200 flex items-center justify-center relative overflow-hidden">
+          {image ? (
+            <Image 
+              src={image} 
+              alt={title}
+              fill
+              className="object-cover group-hover:scale-105 transition-transform duration-300"
+            />
+          ) : (
+            <svg className="w-12 h-12 text-emerald-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9.5a2.5 2.5 0 00-2.5-2.5H14" />
+            </svg>
+          )}
         </div>
         
         <div className="p-6 flex-1 flex flex-col">

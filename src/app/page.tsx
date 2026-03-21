@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import ArticleCard from "@/components/ArticleCard";
 import ServiceCategoryCard from "@/components/ServiceCategoryCard";
 import EmailSignupForm from "@/components/EmailSignupForm";
@@ -11,6 +12,7 @@ export default function Home() {
       slug: "new-homeowner-checklist",
       category: "Moving In",
       readTime: "8 min read",
+      image: "/images/new-construction-home.jpg",
     },
     {
       title: "Essential Services New Construction Homeowners Need",
@@ -18,6 +20,7 @@ export default function Home() {
       slug: "services-new-construction-homeowners-need",
       category: "Home Services",
       readTime: "6 min read",
+      image: "/images/home-exterior.jpg",
     },
     {
       title: "Florida Home Maintenance: A Seasonal Guide",
@@ -25,6 +28,7 @@ export default function Home() {
       slug: "florida-home-maintenance",
       category: "Maintenance",
       readTime: "7 min read",
+      image: "/images/landscaping.jpg",
     },
   ];
 
@@ -111,6 +115,65 @@ export default function Home() {
               >
                 Explore Articles
               </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Photo Gallery Section */}
+      <section className="section-padding bg-white">
+        <div className="max-w-7xl mx-auto container-padding">
+          <div className="text-center mb-12">
+            <span className="text-emerald-700 font-medium text-sm uppercase tracking-wider">Community</span>
+            <h2 className="text-3xl md:text-4xl font-bold text-stone-800 mt-2 mb-4">
+              Life at Babcock Ranch
+            </h2>
+            <p className="text-stone-600 max-w-2xl mx-auto text-lg">
+              America's first solar-powered town — where sustainable living meets modern Florida lifestyle.
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="relative aspect-[4/3] rounded-xl overflow-hidden group">
+              <Image 
+                src="/images/new-construction-home.jpg" 
+                alt="New construction home in Babcock Ranch"
+                fill
+                className="object-cover group-hover:scale-105 transition-transform duration-500"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
+              <div className="absolute bottom-4 left-4 text-white">
+                <p className="font-semibold">Modern New Construction</p>
+                <p className="text-sm text-white/80">Energy-efficient homes</p>
+              </div>
+            </div>
+            
+            <div className="relative aspect-[4/3] rounded-xl overflow-hidden group">
+              <Image 
+                src="/images/florida-backyard.jpg" 
+                alt="Florida backyard with pool"
+                fill
+                className="object-cover group-hover:scale-105 transition-transform duration-500"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
+              <div className="absolute bottom-4 left-4 text-white">
+                <p className="font-semibold">Outdoor Living</p>
+                <p className="text-sm text-white/80">Pools & patios</p>
+              </div>
+            </div>
+            
+            <div className="relative aspect-[4/3] rounded-xl overflow-hidden group">
+              <Image 
+                src="/images/landscaping.jpg" 
+                alt="Florida landscaping"
+                fill
+                className="object-cover group-hover:scale-105 transition-transform duration-500"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
+              <div className="absolute bottom-4 left-4 text-white">
+                <p className="font-semibold">Lush Landscaping</p>
+                <p className="text-sm text-white/80">Native Florida plants</p>
+              </div>
             </div>
           </div>
         </div>

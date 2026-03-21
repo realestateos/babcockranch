@@ -1,0 +1,50 @@
+[
+  {
+    "filename": "babcock-ranch-aerial.jpg",
+    "unsplashId": "1580587771525-78b9dba3b91d",
+    "alt": "Aerial view of Babcock Ranch solar-powered community in Florida",
+    "description": "America's first solar-powered town from above"
+  },
+  {
+    "filename": "new-construction-home.jpg",
+    "unsplashId": "1560518883-ce09059eeffa",
+    "alt": "New construction home in Babcock Ranch Florida",
+    "description": "Modern new construction home"
+  },
+  {
+    "filename": "florida-backyard.jpg",
+    "unsplashId": "1564013799919-ab600027ffc6",
+    "alt": "Beautiful Florida backyard with pool and landscaping",
+    "description": "Typical Florida outdoor living space"
+  },
+  {
+    "filename": "solar-panels.jpg",
+    "unsplashId": "1509391366365-55d6f321a23c",
+    "alt": "Solar panels on Florida home roof",
+    "description": "Solar energy system on residential home"
+  },
+  {
+    "filename": "home-interior.jpg",
+    "unsplashId": "1560448204-e02f11c3d0e2",
+    "alt": "Modern home interior living room",
+    "description": "Open concept living space"
+  },
+  {
+    "filename": "florida-landscaping.jpg",
+    "unsplashId": "1558618666-fcd25c85cd64",
+    "alt": "Lush Florida landscaping with palm trees",
+    "description": "Professional landscaping typical of SW Florida"
+  },
+  {
+    "filename": "pool-maintenance.jpg",
+    "unsplashId": "1572331165267-d7c840d6c2b7",
+    "alt": "Crystal clear swimming pool in Florida backyard",
+    "description": "Pool area ready for maintenance"
+  },
+  {
+    "filename": "home-exterior.jpg",
+    "unsplashId": "1600585154340-be6161a56a0c",
+    "alt": "Beautiful modern home exterior with landscaping",
+    "description": "Curb appeal of new construction home"
+  }
+]
