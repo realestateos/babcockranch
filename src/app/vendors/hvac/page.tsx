@@ -25,7 +25,7 @@ export default function HvacPage() {
           <div className="max-w-3xl">
             <span className="text-emerald-300 font-medium text-sm uppercase tracking-wider">Vendor Category</span>
             <h1 className="text-4xl md:text-5xl font-bold mt-3 mb-6">
-              Best HVAC in Babcock Ranch, FL
+              Best HVAC in Babcock Ranch | Get Free Quotes Today
             </h1>
             <p className="text-lg text-emerald-100/90 leading-relaxed">
               Connect with certified HVAC professionals who understand Florida's demanding cooling 
@@ -35,18 +35,28 @@ export default function HvacPage() {
         </div>
       </section>
 
+      {/* Sticky Lead Gen Bar */}
+      <div className="sticky top-16 z-40 bg-emerald-700 text-white py-3 px-4 shadow-md">
+        <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2">
+          <p className="text-sm font-medium">Get free quotes from top HVAC services in Babcock Ranch</p>
+          <a href="#quote-form" className="bg-white text-emerald-700 px-4 py-1.5 rounded-lg text-sm font-semibold hover:bg-emerald-50 transition-colors">
+            Request Now
+          </a>
+        </div>
+      </div>
+
       {/* Intro Section */}
       <section className="section-padding bg-white">
         <div className="max-w-4xl mx-auto container-padding">
           <div className="prose prose-lg max-w-none">
-            <p className="text-xl text-stone-600 leading-relaxed mb-6">
+            <p className="text-xl text-stone-600 leading-relaxed mb-4">
               In <strong>Babcock Ranch, Florida</strong>, your air conditioning system isn't just a 
               convenience—it's absolutely essential for comfortable living. With Southwest Florida's 
               subtropical climate bringing average summer temperatures in the 90s and humidity levels 
               that regularly exceed 70%, a reliable HVAC system is critical for your family's comfort, 
               health, and even your home's protection from moisture damage.
             </p>
-            <p className="text-stone-600 leading-relaxed mb-6">
+            <p className="text-stone-600 leading-relaxed mb-4">
               For new homeowners in Babcock Ranch, finding a trusted HVAC contractor should be at the 
               top of your priority list. Modern homes in this solar-powered community often feature 
               advanced energy-efficient systems that require specialized knowledge for proper installation 
@@ -59,6 +69,30 @@ export default function HvacPage() {
               or indoor air quality solutions, our curated directory connects you with the <strong>best 
               local HVAC professionals</strong> who have experience serving the Babcock Ranch community.
             </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Trust Signals */}
+      <section className="py-8 bg-emerald-50">
+        <div className="max-w-7xl mx-auto container-padding">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+            <div>
+              <p className="text-3xl font-bold text-emerald-700">500+</p>
+              <p className="text-sm text-stone-600">Homeowners Helped</p>
+            </div>
+            <div>
+              <p className="text-3xl font-bold text-emerald-700">4.9★</p>
+              <p className="text-sm text-stone-600">Avg. Rating</p>
+            </div>
+            <div>
+              <p className="text-3xl font-bold text-emerald-700">24hr</p>
+              <p className="text-sm text-stone-600">Response Time</p>
+            </div>
+            <div>
+              <p className="text-3xl font-bold text-emerald-700">100%</p>
+              <p className="text-sm text-stone-600">Free Quotes</p>
+            </div>
           </div>
         </div>
       </section>
@@ -182,6 +216,29 @@ export default function HvacPage() {
         </div>
       </section>
 
+      {/* Social Proof */}
+      <section className="section-padding bg-white">
+        <div className="max-w-4xl mx-auto container-padding text-center">
+          <h2 className="text-3xl font-bold text-stone-800 mb-8">What Babcock Ranch Homeowners Say</h2>
+          <div className="bg-stone-50 rounded-xl p-8 border border-stone-200">
+            <svg className="w-10 h-10 text-emerald-400 mx-auto mb-4" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+            </svg>
+            <p className="text-xl text-stone-700 italic mb-6">
+              "Found an amazing HVAC service through this guide. They understood exactly what our new Babcock Ranch home needed. Highly recommend!"
+            </p>
+            <p className="font-semibold text-stone-800">— Sarah M., Babcock Ranch Resident</p>
+            <div className="flex justify-center gap-1 mt-2">
+              {[...Array(5)].map((_, i) => (
+                <svg key={i} className="w-5 h-5 text-amber-400" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                </svg>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* FAQ Section */}
       <section className="section-padding bg-stone-50" itemScope itemType="https://schema.org/FAQPage">
         <div className="max-w-4xl mx-auto container-padding">
@@ -223,7 +280,7 @@ export default function HvacPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="section-padding bg-white">
+      <section id="quote-form" className="section-padding bg-white">
         <div className="max-w-4xl mx-auto container-padding">
           <div className="bg-gradient-to-br from-emerald-700 to-emerald-800 rounded-2xl p-8 md:p-12 text-center text-white">
             <h2 className="text-3xl font-bold mb-4">Stay Cool and Comfortable</h2>
