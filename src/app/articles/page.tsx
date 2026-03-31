@@ -17,6 +17,13 @@ export const metadata: Metadata = {
 export default function ArticlesPage() {
   const articles = [
     {
+      title: "Hurricane Preparation Guide for Babcock Ranch Homeowners",
+      excerpt: "Complete hurricane preparation checklist for Babcock Ranch homeowners. Learn about underground utilities, solar power during storms, shutter options, and emergency planning.",
+      slug: "hurricane-preparation-guide",
+      category: "Safety",
+      readTime: "8 min read",
+    },
+    {
       title: "The Ultimate New Homeowner Checklist for Babcock Ranch",
       excerpt: "Everything you need to do in your first 30, 60, and 90 days as a new homeowner in Babcock Ranch. From changing locks to setting up services, we've got you covered.",
       slug: "new-homeowner-checklist",
@@ -61,11 +68,12 @@ export default function ArticlesPage() {
   ];
 
   const categories = [
-    { name: "All", count: 6 },
+    { name: "All", count: 7 },
     { name: "Moving In", count: 1 },
     { name: "Home Services", count: 2 },
     { name: "Home Improvement", count: 2 },
     { name: "Maintenance", count: 1 },
+    { name: "Safety", count: 1 },
   ];
 
   return (
